@@ -25,6 +25,6 @@ COPY . .
 
 RUN ln -snf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && echo "Asia/Kolkata" > /etc/timezone
 
-EXPOSE 3002
+EXPOSE 3003
 
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "3002"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "3003"]
