@@ -1,6 +1,6 @@
 import requests
 
-url = "http://localhost:3002/ocr"
+url = "http://localhost:3003/ocr"
 
 with open("/home/prasanna/Downloads/Screenshot 2025-02-19 092221.jpg", "rb") as f:
     files = {"file": f}
