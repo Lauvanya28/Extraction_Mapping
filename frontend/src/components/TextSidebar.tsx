@@ -33,7 +33,7 @@ export default function TextSidebar({ textLines, onTextClick, selectedText }: Te
           {textLines.map((line, i) => (
             <div
               key={i}
-              ref={el => itemRefs.current[i] = el}
+              ref={el => { itemRefs.current[i] = el; }}
               className={`p-3 rounded cursor-pointer transition-colors ${
                 selectedText === line
                   ? 'bg-blue-100 border-blue-500'
