@@ -35,14 +35,12 @@ export default function Home() {
     formData.append('file', selectedFile);
 
     try {
+      const url = `${process.env.NEXT_PUBLIC_API_URL}/ocr`;
+      console.log("Request URL:", url);
       const response = await axios.post<OCRResponse>(
-        'http://localhost:3002/ocr',
+        url,
         formData,
-        {
-          headers: {
-            'Content-Type': 'multipart/form-data',
-          },
-        }
+        { headers: { 'Content-Type': 'multipart/form-data' } }
       );
 
       setTextLines(response.data.results[0].text_lines);
