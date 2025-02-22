@@ -6,7 +6,7 @@ services:
     ports:
       - 5000:5000
     environment:
-      - NEXT_PUBLIC_API_URL=https://api.ExtractionMapping.coffeeinc.in
+      - NEXT_PUBLIC_API_URL=https://116.203.60.36:5001
       
   backend:
     build: ./backend
