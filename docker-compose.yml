@@ -6,7 +6,7 @@ services:
     ports:
       - 5000:5000
     environment:
-      - NEXT_PUBLIC_API_URL=http://localhost:3003
+      - NEXT_PUBLIC_API_URL=http://localhost:5001
       
   backend:
     build: ./backend
