@@ -8,9 +8,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Engineering Drawing OCR',
   description: 'Extract text from engineering drawings using OCR',
-  icons: {
-    icon: '/favicon.ico',
-  },
 }
 
 export default function RootLayout({
@@ -20,9 +17,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-     <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head> 
       <body className={inter.className}>{children}</body>
     </html>
   )
